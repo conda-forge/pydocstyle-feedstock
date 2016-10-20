@@ -1,14 +1,16 @@
-{% set version = "1.0.0" %}
-{% set md5 = "74a42c1c8148f80c8f2931b615b54a24" %}
+{% set name = "pydocstyle" %}
+{% set version = "1.1.1" %}
+{% set hash_type = "sha256" %}
+{% set hash = "f808d8fc23952fe93c2d85598732bfa854cb5ee8a25f8191f60600710f898e8d" %}
 
 package:
-  name: pydocstyle
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: pydocstyle-{{version}}.zip
-  url: https://pypi.io/packages/source/p/pydocstyle/pydocstyle-{{ version }}.zip
-  md5: {{ md5 }}
+  fn: {{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  {{ hash_type }}: {{ hash }}
 
 build:
     script: python setup.py install --single-version-externally-managed --record=record.txt
@@ -45,4 +47,3 @@ extra:
     - goanpeca
     - jakirkham
     - Nurdok
-

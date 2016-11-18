@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://github.com/PyCQA/pydocstyle
-  license: MIT License
+  license: MIT
   summary: 'Python docstring style checker (formerly pep257)'
   description: |
     pydocstyle is a static analysis tool for checking compliance with Python

@@ -39,7 +39,6 @@ conda search pydocstyle --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 

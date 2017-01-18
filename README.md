@@ -17,6 +17,18 @@ can be easily added, for example to cover NumPy docstring conventions.
 pydocstyle supports Python 2.6, 2.7, 3.3, 3.4, 3.5, pypy and pypy3.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pydocstyle-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydocstyle-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pydocstyle-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pydocstyle-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pydocstyle-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pydocstyle-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydocstyle/badges/version.svg)](https://anaconda.org/conda-forge/pydocstyle)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydocstyle/badges/downloads.svg)](https://anaconda.org/conda-forge/pydocstyle)
+
 Installing pydocstyle
 =====================
 
@@ -72,18 +84,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pydocstyle-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydocstyle-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pydocstyle-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pydocstyle-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pydocstyle-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pydocstyle-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydocstyle/badges/version.svg)](https://anaconda.org/conda-forge/pydocstyle)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydocstyle/badges/downloads.svg)](https://anaconda.org/conda-forge/pydocstyle)
 
 
 Updating pydocstyle-feedstock

@@ -1,15 +1,14 @@
 {% set name = "pydocstyle" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "49680b7ea8c18e911135167e9f6986a3829031b55f2c737e6d2c398df38aafb5" %}
+{% set hash = "4d5bcde961107873bae621f3d580c3e35a426d3687ffc6f8fb356f6628da5a97" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   {{ hash_type }}: {{ hash }}
 
 build:
@@ -25,6 +24,7 @@ requirements:
     - python
     - six
     - snowballstemmer
+    - configparser  # [py2k]
 
 test:
   imports:

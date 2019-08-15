@@ -13,16 +13,16 @@ source:
 
 build:
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   number: 0
   entry_points:
     - pydocstyle = pydocstyle.cli:main
 
 
 requirements:
-  build:
+  host:
+    - pip
     - python >=3.4
-    - setuptools
 
   run:
     - python >=3.4
@@ -31,10 +31,13 @@ requirements:
 test:
   imports:
     - pydocstyle
+  commands:
+    - pydocstyle --version
 
 about:
   home: https://github.com/PyCQA/pydocstyle
   license: MIT
+  license_file: LICENSE-MIT
   summary: 'Python docstring style checker (formerly pep257)'
   description: |
     pydocstyle is a static analysis tool for checking compliance with Python

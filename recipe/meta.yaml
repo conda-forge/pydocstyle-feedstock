@@ -12,8 +12,12 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-    script: python setup.py install --single-version-externally-managed --record=record.txt
-    number: 0
+  noarch: python
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  entry_points:
+    - pydocstyle = pydocstyle.cli:main
+
 
 requirements:
   build:

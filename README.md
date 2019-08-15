@@ -14,15 +14,21 @@ docstring conventions. pydocstyle supports most of PEP 257 out of the box,
 but it should not be considered a reference implementation.
 The framework for checking docstring style is flexible, and custom checks
 can be easily added, for example to cover NumPy docstring conventions.
-pydocstyle supports Python 2.6, 2.7, 3.3, 3.4, 3.5, pypy and pypy3.
+pydocstyle supports Python 3.4, 3.5, 3.6, and 3.7.
 
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pydocstyle-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pydocstyle-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/pydocstyle-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pydocstyle-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pydocstyle-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pydocstyle-feedstock/branch/master)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=857&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydocstyle-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -55,6 +61,8 @@ conda search pydocstyle --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -110,3 +118,12 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@Nurdok](https://github.com/Nurdok/)
+* [@dopplershift](https://github.com/dopplershift/)
+* [@goanpeca](https://github.com/goanpeca/)
+* [@jakirkham](https://github.com/jakirkham/)
+

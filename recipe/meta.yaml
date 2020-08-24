@@ -1,7 +1,6 @@
 {% set name = "pydocstyle" %}
-{% set version = "5.0.2" %}
-{% set hash_type = "sha256" %}
-{% set hash = "f4f5d210610c2d153fae39093d44224c17429e2ad7da12a8b419aba5c2f614b5" %}
+{% set version = "5.1.0" %}
+{% set hash = "4ca3c7736d36f92bb215dd74ef84ac3d6c146edd795c7afc5154c10f1eb1f65a" %}
 
 package:
   name: {{ name }}
@@ -9,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   number: 0
   entry_points:
     - pydocstyle = pydocstyle.cli:main
@@ -38,7 +37,7 @@ about:
   home: https://github.com/PyCQA/pydocstyle
   license: MIT
   license_file: LICENSE-MIT
-  summary: 'Python docstring style checker (formerly pep257)'
+  summary: Python docstring style checker (formerly pep257)
   description: |
     pydocstyle is a static analysis tool for checking compliance with Python
     docstring conventions. pydocstyle supports most of PEP 257 out of the box,

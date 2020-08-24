@@ -5,7 +5,7 @@ Home: https://github.com/PyCQA/pydocstyle
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python docstring style checker (formerly pep257)
 

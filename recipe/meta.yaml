@@ -1,6 +1,6 @@
 {% set name = "pydocstyle" %}
-{% set version = "6.1.1" %}
-{% set hash = "1d41b7c459ba0ee6c345f2eb9ae827cab14a7533a88c5c6f7e94923f72df92dc" %}
+{% set version = "6.2.0" %}
+{% set hash = "b2d280501a4c0d9feeb96e9171dc3f6f7d0064c55270f4c7b1baa18452019fd9" %}
 
 package:
   name: {{ name }}
@@ -22,10 +22,12 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - poetry-core
 
   run:
     - python >=3.6
-    - snowballstemmer
+    - snowballstemmer >=2.2.0
+    - importlib-metadata >=2.0.0,<5.0.0
 
 test:
   imports:

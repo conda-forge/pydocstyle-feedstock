@@ -1,6 +1,6 @@
 {% set name = "pydocstyle" %}
-{% set version = "6.2.0" %}
-{% set hash = "b2d280501a4c0d9feeb96e9171dc3f6f7d0064c55270f4c7b1baa18452019fd9" %}
+{% set version = "6.2.2" %}
+{% set hash = "5714e3a96f6ece848a1c35f581e89f3164867733609f0dd8a99f7e7c6b526bdd" %}
 
 package:
   name: {{ name }}
